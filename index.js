@@ -1,16 +1,29 @@
+
 /**
+ * create middleware
  *
- * @param {express.Request}  req
- * @param {express.Response} res
- * @param {Function}         next middleware iterator
+ * @param {Object} option
+ * @config {RegExp} pattern
+ * @config {Number} duration
  */
 module.exports = function (option) {
+  /**
+   * set expires to response headers
+   *
+   * @param {express.Request}  req
+   * @param {express.Response} res
+   * @param {Function}         next middleware iterator
+   */
   return function (req, res, next) {
     var url = req.url
       , now
       ;
 
-    if (!option.pattern.test(url)) {
+    option = option || {};
+    // default one day
+    option.duration = (option.duration == null) ? (1000 * 60 * 60 * 24) : +option.duration;
+
+    if (!option.pattern || !option.pattern.test(url)) {
       return next();
     }
 

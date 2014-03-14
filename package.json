@@ -1,0 +1,30 @@
+{
+  "name": "connect-expires",
+  "version": "0.0.0",
+  "description": "expires middlewae for connect(express)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/expires-test.js --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nazomikan/connect-expires.git"
+  },
+  "keywords": [
+    "connect",
+    "express",
+    "middleware",
+    "expires",
+    "response",
+    "headers",
+    "cache-controll"
+  ],
+  "author": "nazomikan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nazomikan/connect-expires/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.0"
+  }
+}

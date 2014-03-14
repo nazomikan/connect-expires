@@ -1,7 +1,7 @@
 connect-expires
 ===============
 
-expire middlewae for connext(express)
+expire middlewae for connect(express)
 
 ## How to use
 
@@ -22,5 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 * pattern
   * Patterns of files that adapt
+  * Type: RegExp
 * duration
   * Period to adapt the Expires
+  * Type: Number (ms)
+  * default: one day
