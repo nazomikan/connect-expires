@@ -17,7 +17,7 @@
     "expires",
     "response",
     "headers",
-    "cache-controll"
+    "cache-control"
   ],
   "author": "nazomikan",
   "license": "MIT",
