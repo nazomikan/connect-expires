@@ -1,6 +1,6 @@
 {
   "name": "connect-expires",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "expires middlewae for connect(express)",
   "main": "index.js",
   "scripts": {
