@@ -18,6 +18,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ...
 ```
 
+install connect-expires via npm first:
+
+```
+npm install connect-expires
+```
+
+and then include it in your project with:
+
+```javascript
+var expires = require('connect-expires');
+```
+
 ## option
 
 * pattern
